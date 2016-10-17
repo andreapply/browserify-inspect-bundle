@@ -17,19 +17,12 @@ var foundMods = new Set();
 for (k in mods) {
   var els = mods[k].value.elements[1];
   els.properties.map(function(prop) {
-    // console.log(`${prop.key.value} => ${prop.value.value}`); 
     if (prop.value.value) {
       foundMods.add(prop.key.value)
     }
   });
 }
 
-console.log(foundMods);
 console.log(`--- ${foundMods.size} modules ---`);
+console.log(foundMods);
 
-/*
-for (k in mods) {
-  console.log(` ${k} => ${mods[k]}`);
-  console.log(mods[k]);
-}
-*/
