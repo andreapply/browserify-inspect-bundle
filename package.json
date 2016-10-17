@@ -1,17 +1,16 @@
 {
   "name": "browserify-inspect-bundle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lists the modules that are part of a given browserify bundle.",
   "main": "app.js",
   "dependencies": {
-    "esprima": "^2.7.2",
-    "yargs": "^4.7.1",
-    "lodash": "^4.13.1"
+    "esprima": "^2.7.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "./bin/browserify-inspect-bundle",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exana/browserify-inspect-bundle.git"
